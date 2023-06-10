@@ -2,6 +2,8 @@ import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
+import { GithubIcon, LinkedinIcon } from './Icons'
+import { motion } from 'framer-motion'
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -27,11 +29,17 @@ const Navbar = () => {
         <CustomLink href='/projects' title="Project" className='mx-4' />
         <CustomLink href='/articles' title="Articles" className='ml-4' />
       </nav>
-      <nav>
-        <Link href="/" target={"_blank"}>T</Link>
-        <Link href="/" target={"_blank"}>T</Link>
-        <Link href="/" target={"_blank"}>T</Link>
-        <Link href="/" target={"_blank"}>T</Link>
+      <nav className='flex items-center justify-center flex-wrap'>
+        <motion.a href="/" target={"_blank"}
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ y: -2.5, scale: 1.2 }}
+          className='w-6 mx-3'
+        ><LinkedinIcon /></motion.a>
+        <motion.a href="/" target={"_blank"}
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ y: -2.5, scale: 1.2 }}
+          className='w-6 mx-3'
+        ><GithubIcon /></motion.a>
       </nav>
       <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
         <Logo />
