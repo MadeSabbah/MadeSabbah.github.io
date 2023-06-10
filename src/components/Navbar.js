@@ -30,12 +30,12 @@ const Navbar = () => {
         <CustomLink href='/articles' title="Articles" className='ml-4' />
       </nav>
       <nav className='flex items-center justify-center flex-wrap'>
-        <motion.a href="/" target={"_blank"}
+        <motion.a href="https://www.linkedin.com/in/ahmad-sabbah-48419b25b/" target={"_blank"}
           whileTap={{ scale: 0.9 }}
           whileHover={{ y: -2.5, scale: 1.2 }}
           className='w-6 mx-3'
         ><LinkedinIcon /></motion.a>
-        <motion.a href="/" target={"_blank"}
+        <motion.a href="https://github.com/AhmadSabbah1" target={"_blank"}
           whileTap={{ scale: 0.9 }}
           whileHover={{ y: -2.5, scale: 1.2 }}
           className='w-6 mx-3'
