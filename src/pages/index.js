@@ -14,12 +14,12 @@ export default function Home() {
           <div className="flex items-center justify-between w-full">
             <div className='w-1/2'>
               <h1>A stunning developer</h1>
-              <p>i am here to help you achive your dreams through me hehe</p>
+              <p>This site is still in development</p>
             </div>
-            <div className='w-1/2'>
+            {/* <div className='w-1/2'>
               <h1>A stunning developer</h1>
               <p>i am here to help you achive your dreams through me hehe</p>
-            </div>
+            </div> */}
           </div>
 
         </Layout>
